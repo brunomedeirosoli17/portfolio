@@ -1,6 +1,6 @@
-# Portfólio — Bruno Medeiros
+# Portfólio - Bruno Medeiros
 
-Portfólio pessoal de **Bruno Medeiros** — Desenvolvedor de Sistemas e Analista de Dados,
+Portfólio pessoal de **Bruno Medeiros** - Desenvolvedor de Sistemas e Analista de Dados,
 formado em Análise e Desenvolvimento de Sistemas (ADS).
 
 🔗 **Contato:** [LinkedIn](https://www.linkedin.com/in/bruno-medeiros-670843237) ·
@@ -13,9 +13,9 @@ rolar a página.
 
 ### Tecnologias
 
-- **HTML5** — estrutura semântica
-- **CSS3** — layout responsivo, grid/flexbox e animações
-- **JavaScript** — menu mobile, scroll reveal (`IntersectionObserver`), scrollspy,
+- **HTML5** - estrutura semântica
+- **CSS3** - layout responsivo, grid/flexbox e animações
+- **JavaScript** - menu mobile, scroll reveal (`IntersectionObserver`), scrollspy,
   barras de habilidade animadas e validação do formulário de contato
 
 ## Estrutura
@@ -29,4 +29,4 @@ rolar a página.
 
 ## Como rodar
 
-Basta abrir o `index.html` no navegador — não há dependências nem build.
+Basta abrir o `index.html` no navegador - não há dependências nem build.

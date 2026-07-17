@@ -1,5 +1,5 @@
 // ===================================================================
-//  Portfólio — Bruno Medeiros
+//  Portfólio - Bruno Medeiros
 //  Funções básicas: menu mobile, scroll, animações e formulário.
 // ===================================================================
 
@@ -51,24 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   reveals.forEach(el => revealObserver.observe(el));
 
   // -----------------------------------------------------------------
-  // 4) Barras de habilidade animam ao aparecer
-  // -----------------------------------------------------------------
-  const bars = document.querySelectorAll('.skill-bar-fill');
-
-  const barObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const fill = entry.target;
-        fill.style.width = fill.dataset.width || '0%';
-        observer.unobserve(fill);
-      }
-    });
-  }, { threshold: 0.4 });
-
-  bars.forEach(bar => barObserver.observe(bar));
-
-  // -----------------------------------------------------------------
-  // 5) Link ativo no menu conforme a seção visível (scrollspy)
+  // 4) Link ativo no menu conforme a seção visível (scrollspy)
   // -----------------------------------------------------------------
   const sections = document.querySelectorAll('section[id]');
   const menuLinks = navLinks.querySelectorAll('a');
@@ -87,13 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(sec => spyObserver.observe(sec));
 
   // -----------------------------------------------------------------
-  // 6) Ano atual no rodapé
+  // 5) Ano atual no rodapé
   // -----------------------------------------------------------------
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // -----------------------------------------------------------------
-  // 7) Formulário de contato (validação + envio via e-mail)
+  // 6) Formulário de contato (validação + envio via e-mail)
   // -----------------------------------------------------------------
   const form     = document.getElementById('contactForm');
   const feedback = document.getElementById('formFeedback');
@@ -119,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Sem back-end: abre o app de e-mail já preenchido
-      const assunto = encodeURIComponent(`Contato pelo portfólio — ${nome}`);
-      const corpo   = encodeURIComponent(`${msg}\n\n— ${nome} (${email})`);
+      const assunto = encodeURIComponent(`Contato pelo portfólio - ${nome}`);
+      const corpo   = encodeURIComponent(`${msg}\n\n- ${nome} (${email})`);
       window.location.href =
         `mailto:brunomedeirosoli17@gmail.com?subject=${assunto}&body=${corpo}`;
 
